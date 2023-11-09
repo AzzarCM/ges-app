@@ -11,18 +11,18 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-import logo from '../assets/img/global.svg'
+import logo from '../assets/svg/global.svg'
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Servicio 1', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: SquaresPlusIcon },
+  { name: 'Servicio 2', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: CursorArrowRaysIcon },
+  { name: 'Servicio 3', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: SquaresPlusIcon },
+  { name: 'Servicio 4', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: SquaresPlusIcon },
+  { name: 'Servicio 5', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: ArrowPathIcon },
 ]
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Cotizacion', href: '#', icon: PlayCircleIcon },
+  { name: 'Emergencias 24/7', href: '#', icon: PhoneIcon },
 ]
 
 function classNames(...classes) {
@@ -34,11 +34,11 @@ export const Navbar = () => {
   return (
 
     <header className="bg-white">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <NavLink to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Global Electric Services logo</span>
-            <img className="h-20 w-auto" src={logo} alt="global-logo" />
+            <img className="w-40" src={logo} alt="global-logo" />
           </NavLink>
         </div>
         <div className="flex lg:hidden">
