@@ -4,17 +4,16 @@ import { NavLink } from 'react-router-dom'
 import {
   ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
   CursorArrowRaysIcon,
-  FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
+  ClockIcon
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import logo from '../assets/svg/global.svg'
 
 const products = [
-  { name: 'Servicio 1', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: SquaresPlusIcon },
+  { name: 'Servicio 1', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: ClockIcon },
   { name: 'Servicio 2', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: CursorArrowRaysIcon },
   { name: 'Servicio 3', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: SquaresPlusIcon },
   { name: 'Servicio 4', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: SquaresPlusIcon },
@@ -114,7 +113,7 @@ export const Navbar = () => {
           </NavLink>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="text-sm font-semibold leading-6 text-white">
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div>

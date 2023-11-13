@@ -2,6 +2,11 @@ import React from 'react'
 import { HomeWelcome } from '../components/HomeWelcome'
 import { SucessStories } from '../components/SucessStories'
 import { NavLink } from 'react-router-dom'
+import { WhyUs } from '../components/WhyUs'
+import { LogoClouds } from '../components/LogoClouds'
+import { EmergencyService } from '../components/EmergencyService'
+import { ContactForm } from '../components/ContactForm'
+import { Footer } from '../components/Footer'
 
 export const Home = () => {
   return (
@@ -11,14 +16,17 @@ export const Home = () => {
       <h2 className='text-center text-5xl font-bold -mt-12 sm:-mt-20 lg:-mt-40 xl:-mt-50 2xl:-mt-60'>Somos tus <span className='font-thin'>expertos</span> eléctricos</h2>
       <div className='h-1 w-40 bg-gradient-to-r from-custom-black-gray place-self-center mt-2 mb-20'></div>
       <SucessStories />
-      <div className='flex flex-col mx-auto max-w-7xl justify-center items-center mt-20'>
+      <div className='flex flex-col mx-auto max-w-7xl justify-center items-center mt-20 mb-20'>
         <h2 className='text-4xl text-center font-bold'>Proporcionando servicios <span className='text-global-main-color'>eléctricos</span> profesionales</h2>
-        <p className='text-2xl font-thin text-center p-5'>RELIABLE AND AFFORDABLE ELECTRICAL SERVICES THROUGHOUT 
-        NASSAU AND SUFFOLK COUNTY THAT OPTIMIZE ENERGY AND REDUCE COSTS
+        <p className='text-2xl font-thin text-center p-5'>SERVICIOS ELÉCTRICOS CONFIABLES Y ASEQUIBLES EN TODO EL SALVADOR LOS CUALES OPTIMIZAN LA ENERGÍA Y REDUCEN LOS COSTOS
         </p>
-        <NavLink className="inline-block rounded-md border border-transparent bg-global-main-color px-8 py-3 text-center font-medium text-white hover:bg-global-main-color-dark">Contactanos</NavLink>
+        <NavLink to="/contact" className="inline-block rounded-md border border-transparent bg-global-main-color px-8 py-3 text-center font-medium text-white hover:bg-global-main-color-dark">Contactanos</NavLink>
       </div>
-
+      <WhyUs/>
+      <LogoClouds/>
+      <EmergencyService/>
+      <ContactForm/>
+      <Footer/>
     </div>
   )
 }

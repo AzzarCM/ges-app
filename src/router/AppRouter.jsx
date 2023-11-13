@@ -12,20 +12,20 @@ import { Page404 } from '../app/pages/Page404'
 
 export const AppRouter = () => {
   return (
-<>
-<Navbar/>
-    <Routes>
-        <Route path='home' element={ <Home/> }/>
-        <Route path='contact' element={ <Contact/> }/>
-        <Route path='energy-effiency' element={ <EnergyEffiency/> }/>
-        <Route path='proyects' element={ <Proyects/> }/>
-        <Route path='services' element={ <Services/> }/>
-        <Route path='about' element={ <About/> }/>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path='home' element={<Home />} />
+        <Route path='contact' element={<Contact />} />
+        <Route path='energy-effiency' element={<EnergyEffiency />} />
+        <Route path='proyects' element={<Proyects />} />
+        <Route path='services' element={<Services />} />
+        <Route path='about' element={<About />} />
 
-        <Route path='/' element={ <Navigate to="/home"/>}/>
+        <Route path='/' element={<Navigate to="/home" />} />
 
-        <Route path="*" element={ <Page404/>}/>
-    </Routes>
+        <Route path="*" element={<Page404 />} />
+      </Routes>
     </>
   )
 }
