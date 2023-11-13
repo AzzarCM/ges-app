@@ -8,6 +8,7 @@ import { Services } from '../app/pages/Services'
 import { About } from '../app/pages/About'
 
 import { Navbar } from '../app/components/Navbar'
+import { Page404 } from '../app/pages/Page404'
 
 export const AppRouter = () => {
   return (
@@ -23,7 +24,7 @@ export const AppRouter = () => {
 
         <Route path='/' element={ <Navigate to="/home"/>}/>
 
-        <Route path="*" element={ <Navigate to="/"/>}/>
+        <Route path="*" element={ <Page404/>}/>
     </Routes>
     </>
   )
