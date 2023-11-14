@@ -7,6 +7,7 @@ import { LogoClouds } from '../components/LogoClouds'
 import { EmergencyService } from '../components/EmergencyService'
 import { ContactForm } from '../components/ContactForm'
 import { Footer } from '../components/Footer'
+import Map from '../components/GoogleMaps'
 
 export const Home = () => {
   return (
@@ -26,6 +27,7 @@ export const Home = () => {
       <LogoClouds/>
       <EmergencyService/>
       <ContactForm/>
+      <Map/>
       <Footer/>
     </div>
   )
