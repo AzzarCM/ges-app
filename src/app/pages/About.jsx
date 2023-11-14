@@ -1,7 +1,8 @@
 import React from 'react'
+import { Maitainance } from './Maintainance'
 
 export const About = () => {
   return (
-    <h1>About</h1>
+    <Maitainance/>
   )
 }

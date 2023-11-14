@@ -1,7 +1,8 @@
 import React from 'react'
+import { Maitainance } from './Maintainance'
 
 export const Contact = () => {
   return (
-    <h1>Contact</h1>
+    <Maitainance/>
   )
 }
