@@ -1,7 +1,8 @@
 import React from 'react'
+import { Maitainance } from './Maintainance'
 
 export const Proyects = () => {
   return (
-    <h1>Proyects</h1>
+    <Maitainance/>
   )
 }
