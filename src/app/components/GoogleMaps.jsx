@@ -13,9 +13,11 @@ const center = {
 
 function GoogleMaps() {
 
+  const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
+
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyC6-LO2EWr39Gxu58fMMle7HQMpGWm2V-E"
+    googleMapsApiKey: apiKey
   })
 
   return isLoaded ? (
