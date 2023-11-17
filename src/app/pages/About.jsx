@@ -1,6 +1,6 @@
 import React from 'react'
-import { Maitainance } from './Maintainance'
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck, faLock, faHand } from '@fortawesome/free-solid-svg-icons'
 import { TeamSection } from '../components/TeamSection'
 import banner3 from '../assets/img/banner-3.png'
 import { Footer } from '../components/Footer'
@@ -124,7 +124,7 @@ export const About = () => {
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Nuestros Valores.</h2>
                 <ul role="list" className="mt-8 space-y-8 text-gray-600">
                   <li className="flex gap-x-3">
-                    <CloudArrowUpIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                    <FontAwesomeIcon className="mt-1 h-5 w-5 flex-none text-global-main-color" aria-hidden="true" icon={faCheck} />
                     <span>
                       <strong className="font-semibold text-gray-900">Flexibles</strong> Porque nos adaptamos al tamaño del proyecto
                       “No hay trabajo pequeño ni trabajo grande”,
@@ -133,7 +133,7 @@ export const About = () => {
                     </span>
                   </li>
                   <li className="flex gap-x-3">
-                    <LockClosedIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                    <FontAwesomeIcon className="mt-1 h-5 w-5 flex-none text-global-main-color" aria-hidden="true" icon={faLock} />
                     <span>
                       <strong className="font-semibold text-gray-900">Integrales</strong> Porque ejecutamos soluciones completas,
                       incluyendo las mejores practicas
@@ -141,7 +141,7 @@ export const About = () => {
                     </span>
                   </li>
                   <li className="flex gap-x-3">
-                    <ServerIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                    <FontAwesomeIcon className="mt-1 h-5 w-5 flex-none text-global-main-color" aria-hidden="true" icon={faHand} />
                     <span>
                       <strong className="font-semibold text-gray-900">Comprometidos</strong> Entendemos que su tiempo es valioso.
                       Es por eso que nuestros técnicos profesionales se aseguran

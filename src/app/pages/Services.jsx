@@ -1,26 +1,25 @@
 import React from 'react'
-import { Maitainance } from './Maintainance'
 import './css/custom_home.css'
 import { Footer } from '../components/Footer'
 
 const ingenieria = [
   { name: 'Ingeniería', description: 'Aplicación de los conocimientos a la solución de los problemas y retos que enfrentan en las diferentes áreas.' },
   { name: 'Diseño', description: 'Creación de un plano convención para la construcción de un objeto o un sistema' },
-  { name: 'Ejemplo 3', description: 'descripcion' },
-  { name: 'Ejemplo 4', description: 'descripcion' },
+  { name: 'Sistemas eléctricos en baja, media y alta tensión', description: 'La tensión es la diferencia de potencial eléctrico entre dos puntos' },
+  { name: 'Automatización y Control', description: 'Puedes automatizar los procesos de disponibilidad eléctrica' },
 ]
 
 const suministros = [
-  { name: 'Generadores', description: 'Dispositivo o máquina capaz de producir energía de manera propia.' },
-  { name: 'Controladores', description: 'Herramienta de monitoreo y control en línea para dispositivos y accesorios' },
-  { name: 'Suministro 3', description: 'descripcion' },
+  { name: 'Generadores', description: 'Dispositivos o máquinas capaces de producir energía de manera propia.' },
+  { name: 'Controladores', description: 'Herramientas de monitoreo y control en línea para dispositivos y accesorios' },
+  { name: 'Iluminación', description: 'descripcion' },
   { name: 'Suministro 4', description: 'descripcion' },
 ]
 
 const mantenimiento = [
   { name: 'Mantenimiento Preventivo', description: 'descripcion' },
   { name: 'Mantenimiento Predictivo', description: 'descripcions' },
-  { name: 'Mantenimiento Correctivo 3', description: 'descripcion' }
+  { name: 'Mantenimiento Correctivo', description: 'descripcion' }
 ]
 
 const mediciones = [
