@@ -27,7 +27,7 @@ export const Home = () => {
       <LogoClouds/>
       <EmergencyService/>
       <ContactForm/>
-      {/* <Map/> */}
+      <Map/>
       <Footer/>
     </div>
   )
