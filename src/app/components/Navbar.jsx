@@ -13,15 +13,15 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 import logo from '../assets/svg/global.svg'
 
 const products = [
-  { name: 'Servicio 1', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: ClockIcon },
-  { name: 'Servicio 2', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Servicio 3', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: SquaresPlusIcon },
-  { name: 'Servicio 4', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: SquaresPlusIcon },
-  { name: 'Servicio 5', description: 'Lorem ipsum dolor, sit amet consectetur', href: '#', icon: ArrowPathIcon },
+  { name: 'Ingenieria y Diseño', description: 'Proporcionamos servicios de ingeniería conceptual, básica y de detalle', href: '/services/#ingenieria', icon: ClockIcon },
+  { name: 'Suministros', description: 'Tenemos alianzas tanto con fabricantes como con distribuidores', href: '/services/#suministros', icon: CursorArrowRaysIcon },
+  { name: 'Operación y Mantenimiento', description: 'Servicios de Mantenimiento para todas sus áreas de negocios. ', href: '/services/#mantenimiento', icon: SquaresPlusIcon },
+  { name: 'Mediciones', description: 'Realizamos mediciones de variables eléctricas con equipo certificado de primera categoría', href: '/services/#mediciones', icon: SquaresPlusIcon },
+  { name: 'Construcción', description: 'Ofrecemos soluciones flexibles', href: '/services/#construccion', icon: ArrowPathIcon },
 ]
 const callsToAction = [
-  { name: 'Cotizacion', href: '#', icon: PlayCircleIcon },
-  { name: 'Emergencias 24/7', href: '#', icon: PhoneIcon },
+  { name: 'Cotizacion', href: '/contact', icon: PlayCircleIcon },
+  { name: 'Emergencias 24/7', href: 'https://wa.me/50376765329', icon: PhoneIcon },
 ]
 
 function classNames(...classes) {
@@ -122,14 +122,15 @@ export const Navbar = () => {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <NavLink to="/home" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
                 className="h-20 w-auto"
                 src={logo}
                 alt="global-logo-mobile"
+                onClick={() => setMobileMenuOpen(false)}
               />
-            </a>
+            </NavLink>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -146,7 +147,7 @@ export const Navbar = () => {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Product
+                        Servicios
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
@@ -159,6 +160,7 @@ export const Navbar = () => {
                             as="a"
                             href={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            onClick={() => setMobileMenuOpen(false)}
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -167,32 +169,35 @@ export const Navbar = () => {
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="#"
+                <NavLink
+                  to="/projects"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
-                  Features
-                </a>
-                <a
-                  href="#"
+                  Proyectos
+                </NavLink>
+                <NavLink
+                  to="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
+                  Nosotros
+                </NavLink>
+                <NavLink
+                  to="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
-                  Company
-                </a>
+                  Contacto
+                </NavLink>
               </div>
               <div className="py-6">
-                <a
+                <NavLink
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 text-white"
                 >
                   Log in
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>

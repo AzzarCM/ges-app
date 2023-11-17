@@ -22,7 +22,7 @@ export const Footer = () => {
             <NavLink key={item.value} to={item.page} className="text-white text-center text-xl">{item.value}
             </NavLink>))}
         </div>
-        <div className='flex justify-center'>
+        <div className='flex justify-center mt-5'>
           <a href='https://wa.me/50376765329' target='_blank'><FontAwesomeIcon size='2xl' color='white' icon={faWhatsapp} /></a>
           <a href='https://www.linkedin.com/company/global-electric-services-s-a-de-c-v/' target='_blank'>
             <FontAwesomeIcon className='pl-5' size='2xl' color='white' icon={faLinkedinIn} />
