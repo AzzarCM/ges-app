@@ -16,7 +16,7 @@ const items = [
 export const Footer = () => {
   return (
     <div>
-      <div className='pt-10 pb-10 bg-stone-600'>
+      <div className='pt-20 pb-20 bg-footer-bg-color'>
         <div className='grid grid-cols-2 gap-2'>
           {items.map((item) => (
             <NavLink key={item.value} to={item.page} className="text-white text-center text-xl">{item.value}
