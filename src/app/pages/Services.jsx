@@ -41,7 +41,7 @@ export const Services = () => {
     <div>
       <div className='backgroundServices bg-cover w-full full-screen-banner-height flex items-center justify-center'>
         <div className='flex flex-col items-center rounded-md bg-gradient-to-r from-custom-black-gray from-25% xl:p-20'>
-          <h1 className='text-white text-6xl xl:text-8xl font-bold text-center mb-10'>Servicios</h1>
+          <h1 className='text-white text-6xl xl:text-8xl font-bold text-center mb-10'>Nuestros <span className='text-global-main-color'>Servicios</span></h1>
           <p className='text-white text-3xl max-w-2xl mb-10 font-thin text-center'>Creando asociaciones a
             largo plazo con nuestros servicios <span className='text-global-main-color font-bold'>eléctricos</span> de alta
             calidad para necesidades residenciales y comerciales.</p>

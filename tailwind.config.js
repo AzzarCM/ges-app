@@ -17,7 +17,8 @@ export default {
         'custom-dark-gray': '#5F5E5C',
         'custom-dark-green': '#718C83',
         'global-main-color': '#fcc26c',
-        'global-main-color-dark': '#E1B169'
+        'global-main-color-dark': '#E1B169',
+        'footer-bg-color': '#111827',
       }
     },
   },
