@@ -2,8 +2,10 @@
 
 .backgroundHome{
   background: url(../../assets/img/global-banner.jpg);
-  background-size: cover;
-  width: 100%;
+}
+
+.backgroundServices{
+  background: url(../../assets/img/banner-2.jpg);
 }
 
 .full-screen-banner-height{
