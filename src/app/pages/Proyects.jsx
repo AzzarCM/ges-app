@@ -1,8 +1,7 @@
-import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserClock, faIdBadge, faHandHoldingDollar, faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 import './css/custom_home.css'
-
+import { TestimonialCard } from '../components/TestimonialCard'
 
 const links = [
   { name: 'Mantenimiento', href: '#' },
@@ -55,7 +54,7 @@ export const Proyects = () => {
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Casos de Éxito!</h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Estableciendo estándares en servicios eléctricos comerciales e industriales 
+              Estableciendo estándares en servicios eléctricos comerciales e industriales
               a través de nuestras soluciones profesionales y confiables
             </p>
           </div>
@@ -71,13 +70,14 @@ export const Proyects = () => {
               {stats.map((stat) => (
                 <div key={stat.name} className="flex flex-col-reverse">
                   <dt className="text-base leading-7 text-gray-300">{stat.name}</dt>
-                  <dd className="text-2xl font-bold leading-9 tracking-tight text-white"><FontAwesomeIcon icon={stat.value}/></dd>
+                  <dd className="text-2xl font-bold leading-9 tracking-tight text-white"><FontAwesomeIcon icon={stat.value} /></dd>
                 </div>
               ))}
             </dl>
           </div>
         </div>
       </div>
+      <TestimonialCard />
     </div>
   )
 }
