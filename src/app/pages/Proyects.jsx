@@ -2,6 +2,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserClock, faIdBadge, faHandHoldingDollar, faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 import './css/custom_home.css'
 import { TestimonialCard } from '../components/TestimonialCard'
+import { ProyectCarousel } from '../components/ProyectCarousel'
+import { Footer } from '../components/Footer'
+
+import comap1 from '../assets/img/websupervisor.png'
+import linea1 from '../assets/img/linea1.png'
+import capacitor1 from '../assets/img/capacitor.png'
+import capacitor2 from '../assets/img/capacitor2.png'
+import alimentadores1 from '../assets/img/alimentadores1.png'
 
 const links = [
   { name: 'Mantenimiento', href: '#' },
@@ -15,6 +23,36 @@ const stats = [
   { name: 'Tiempo de ejecuciones garatizadas', value: faUserClock },
   { name: 'Estimaciones detalladas', value: faPenToSquare },
 ]
+
+
+const carousel1 = [
+  {img: comap1, text: 'Interfaz ComAp'},
+  {img: comap1, text: 'Interfaz ComAp'},
+  {img: comap1, text: 'Interfaz ComAp'},
+  {img: comap1, text: 'Interfaz ComAp'},
+]
+
+const carousel2 = [
+  {img: linea1, text: 'Revision de linea'},
+  {img: linea1, text: 'Revision de linea'},
+  {img: linea1, text: 'Revision de linea'},
+  {img: linea1, text: 'Revision de linea'},
+]
+
+const carousel3 = [
+  {img: capacitor1, text: 'Banco de capacitores'},
+  {img: capacitor2, text: 'Poste electrico'},
+  {img: capacitor1, text: 'Banco de capacitores'},
+  {img: capacitor2, text: 'Poste electrico'},
+]
+
+const carousel4 = [
+  {img: alimentadores1, text: 'Diseño eléctrico'},
+  {img: alimentadores1, text: 'Diseño eléctrico'},
+  {img: alimentadores1, text: 'Diseño eléctrico'},
+  {img: alimentadores1, text: 'Diseño eléctrico'},
+]
+
 
 
 export const Proyects = () => {
@@ -78,6 +116,72 @@ export const Proyects = () => {
         </div>
       </div>
       <TestimonialCard />
+      <section className='mt-10 mb-10 flex flex-col mx-auto max-w-7xl pl-3 pr-3'>
+        <div className='flex flex-col text-center'>
+          <h2 className='text-xl font-bold mb-10'>Monitoreo de Sistemas Eléctricos del Hospital más importante de El Salvador</h2>
+          <p className='text-gray-600'>
+          Uno de los proyectos más emblemáticos de nuestra compañía, ha sido la automatización de los sistemas primarios y de respaldo de uno de los hospitales 
+          más importantes de El Salvador. El proyecto consistió en el suministro, instalación y puesta en marcha del monitoreo de las instalaciones eléctricas.
+          <br/>
+          <br/>
+          Todo esto fue posible gracias a tecnología de Single Gen-set Controllers de ComAp, que nuestro personal altamente calificado utilizó para reemplazar 
+          los controles de cada uno de los generadores eléctricos, para darle la capacidad de comunicarse a través de internet y GSM.
+          </p>
+        </div>
+        <ProyectCarousel data={carousel1} dir='rtl'/>
+      </section>
+
+      <section className='mt-10 mb-10 flex flex-col mx-auto max-w-7xl pl-3 pr-3'>
+        <div className='flex flex-col text-center'>
+          <h2 className='text-xl font-bold mb-10'>Repotenciación de Línea Primaria y Subestaciones en Morazán, El Salvador</h2>
+          <p className='text-gray-600'>
+          Como parte de nuestro amplio portafolio, una de nuestras especialidades es en los trabajos de media tensión. 
+          Este proyecto emblema se llevó acabo en con el objetivo de suministrar energía eléctrica al sistema de bombeo del cliente. 
+          Todo el diseño, suministro, instalación y puesta en marcha fue realizado por nuestros técnicos e ingenieros de proyectos de primera línea.
+          <br/>
+          <br/>
+          Las instalaciones fueron diseñadas y construidas acorde a las regulaciones nacionales e internacionales vigentes. 
+          El alcance fue construir una línea en media tensión de 1.2km, cinco subestaciones en configuración delta abierta compuesta de 2x37.5kVA cada una, 
+          sistema de baja tensión y control de bombas en cada una de las subestaciones.
+          </p>
+        </div>
+        <ProyectCarousel data={carousel2} dir='ltr'/>
+      </section>
+
+      <section className='mt-10 mb-10 flex flex-col mx-auto max-w-7xl pl-3 pr-3'>
+        <div className='flex flex-col text-center'>
+          <h2 className='text-xl font-bold mb-10'>Instalación de Subestación y Banco de Capacitores en La Paz, El Salvador</h2>
+          <p className='text-gray-600'>
+          El objetivo de este proyecto era suministrar energía a una bodega de un recinto fiscal, además de corregir el factor de potencia 
+          por medio de un banco de capacitores e instalar extractores de aire para bajar las temperaturas internas.
+          <br/>
+          <br/>
+          En esta bodega se almacenan medicamentos que deben estar en refrigeración, por lo que fue necesario realizar la 
+          ingeniería para el dimensionamiento de la subestación, conductores y protecciones necesarias.
+          </p>
+        </div>
+        <ProyectCarousel data={carousel3} dir='rtl'/>
+      </section>
+
+      <section className='mt-10 mb-10 flex flex-col mx-auto max-w-7xl pl-3 pr-3'>
+        <div className='flex flex-col text-center'>
+          <h2 className='text-xl font-bold mb-10'>Ingeniería de Detalle para alimentadores de cuartos fríos en Aeropuerto San Pedro Sula, Honduras</h2>
+          <p className='text-gray-600'>
+          Uno de los rubros de gran importancia y crecimiento de nuestra compañía son los diseños de ingeniería. 
+          En este proyecto se nos encomendó realizar la ingeniería de detalle para los alimentadores de recamaras 
+          refrigerantes en el Aeropuerto de San Pedro Sula.
+
+          <br/>
+          <br/>
+          Se presentaron memorias de cálculo eléctrico, cuadros de carga, diagramas unifilares y detalles constructivos 
+          de cada una de las partes eléctricas involucradas. Esta necesidad del cliente nace luego de que nuestra compañía 
+          fue la encargada de realizar un montaje similar en Aeropuerto Monseñor Romero en El Salvador.
+          </p>
+        </div>
+        <ProyectCarousel data={carousel4} dir='ltr'/>
+      </section>
+      
+      <Footer/>
     </div>
   )
 }
