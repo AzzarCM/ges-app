@@ -54,10 +54,10 @@ export const TeamSection = () => {
           {people.map((person) => (
             <li key={person.name}>
               <div className="flex items-center gap-x-6">
-                <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                <img className="h-20 w-20 rounded-full" src={person.imageUrl} alt="photo-team" />
                 <div>
                   <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                  <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
+                  <p className="text-sm font-semibold leading-6 text-global-main-color">{person.role}</p>
                 </div>
               </div>
             </li>

@@ -19,6 +19,9 @@ export default {
         'global-main-color': '#fcc26c',
         'global-main-color-dark': '#E1B169',
         'footer-bg-color': '#111827',
+      },
+      padding: {
+        '48rem': '48rem',
       }
     },
   },
