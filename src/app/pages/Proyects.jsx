@@ -4,7 +4,9 @@ import './css/custom_home.css'
 import { TestimonialCard } from '../components/TestimonialCard'
 import { ProyectCarousel } from '../components/ProyectCarousel'
 import { Footer } from '../components/Footer'
-
+import HoverCarousel from 'hover-carousel';
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 import comap1 from '../assets/img/websupervisor.png'
 import linea1 from '../assets/img/linea1.png'
 import capacitor1 from '../assets/img/capacitor.png'
@@ -53,7 +55,14 @@ const carousel4 = [
   {img: alimentadores1, text: 'Diseño eléctrico'},
 ]
 
+const imgCar3 = [capacitor1, capacitor2, capacitor1, capacitor2, capacitor1]
 
+const imgGallery2 = [
+  {original: linea1, thumbnail: linea1},
+  {original: linea1, thumbnail: linea1},
+  {original: linea1, thumbnail: linea1},
+  {original: linea1, thumbnail: linea1},
+]
 
 export const Proyects = () => {
   return (
@@ -131,7 +140,7 @@ export const Proyects = () => {
         <ProyectCarousel data={carousel1} dir='rtl'/>
       </section>
 
-      <section className='mt-10 mb-10 flex flex-col mx-auto max-w-7xl pl-3 pr-3'>
+      <section className='mt-10 mb-10 flex flex-col mx-auto max-w-7xl items-center pl-3 pr-3'>
         <div className='flex flex-col text-center'>
           <h2 className='text-xl font-bold mb-10'>Repotenciación de Línea Primaria y Subestaciones en Morazán, El Salvador</h2>
           <p className='text-gray-600'>
@@ -145,7 +154,10 @@ export const Proyects = () => {
           sistema de baja tensión y control de bombas en cada una de las subestaciones.
           </p>
         </div>
-        <ProyectCarousel data={carousel2} dir='ltr'/>
+        {/* <ProyectCarousel data={carousel2} dir='ltr'/> */}
+        <div className='mt-10 max-w-3xl'>
+          <ImageGallery showFullscreenButton={false} showPlayButton={false} items={imgGallery2}/>
+        </div>
       </section>
 
       <section className='mt-10 mb-10 flex flex-col mx-auto max-w-7xl pl-3 pr-3'>
@@ -160,7 +172,10 @@ export const Proyects = () => {
           ingeniería para el dimensionamiento de la subestación, conductores y protecciones necesarias.
           </p>
         </div>
-        <ProyectCarousel data={carousel3} dir='rtl'/>
+        {/* <ProyectCarousel data={carousel3} dir='rtl'/> */}
+        <div className='pt-10'>
+          <HoverCarousel images={imgCar3} />
+        </div>
       </section>
 
       <section className='mt-10 mb-10 flex flex-col mx-auto max-w-7xl pl-3 pr-3'>
