@@ -2,7 +2,6 @@ import React from 'react'
 import cristian from '../assets/img/cristian.png'
 import julian from '../assets/img/julian.png'
 import henry from '../assets/img/henry.png'
-import manuel from '../assets/img/manuel.png'
 import elisa from '../assets/img/elisa.png'
 
 const people = [
@@ -23,12 +22,6 @@ const people = [
     role: 'Soluciones O&M',
     imageUrl:
       henry,
-  },
-  {
-    name: 'Manuel Henríquez',
-    role: 'Jefatura O&M',
-    imageUrl:
-      manuel,
   },
   {
     name: 'Elizabeth de Lemus',
