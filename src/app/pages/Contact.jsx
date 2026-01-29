@@ -1,7 +1,3 @@
-import React from 'react'
-import { Maitainance } from './Maintainance'
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
@@ -44,9 +40,11 @@ export const Contact = () => {
                   </div>
                   LLamanos
                 </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">+503 7297-3572 <br />
-                  +503 7675-4943 <br />
-                  +503 7676-5329</dd>
+                <dd className="mt-2 text-base leading-7 text-gray-600">
+                  <a href="https://wa.me/50372973572" target="_blank" rel="noreferrer" className="text-global-main-color hover:text-global-main-color-dark">+503 7297-3572</a> <br />
+                  <a href="https://wa.me/50376754943" target="_blank" rel="noreferrer" className="text-global-main-color hover:text-global-main-color-dark">+503 7675-4943</a> <br />
+                  <a href="https://wa.me/50376765329" target="_blank" rel="noreferrer" className="text-global-main-color hover:text-global-main-color-dark">+503 7676-5329</a>
+                </dd>
               </div>
               <div className="relative pl-16">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
