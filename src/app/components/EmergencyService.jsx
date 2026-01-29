@@ -1,5 +1,4 @@
-import React from 'react'
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon, QuestionMarkCircleIcon } from '@heroicons/react/20/solid'
+import { LockClosedIcon, ServerIcon, QuestionMarkCircleIcon } from '@heroicons/react/20/solid'
 import cover247 from '../assets/img/cover247.jpg'
 
 const features = [

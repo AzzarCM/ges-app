@@ -1,5 +1,3 @@
-import React from 'react'
-
 import cumminsLogo from '../assets/svg/cummins.svg'
 import comap from '../assets/img/comap.png'
 import kohler from '../assets/img/kohler.png'

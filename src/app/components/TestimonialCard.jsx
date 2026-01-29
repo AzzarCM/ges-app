@@ -1,4 +1,4 @@
-import React from 'react'
+
 import logo from '../assets/svg/global.svg'
 import cristian from '../assets/img/cristian.png'
 

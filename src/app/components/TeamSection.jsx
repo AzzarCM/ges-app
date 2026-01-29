@@ -1,4 +1,3 @@
-import React from 'react'
 import cristian from '../assets/img/cristian.png'
 import julian from '../assets/img/julian.png'
 import henry from '../assets/img/henry.png'

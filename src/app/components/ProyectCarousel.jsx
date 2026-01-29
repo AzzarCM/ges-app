@@ -1,4 +1,3 @@
-import React from 'react'
 import ScrollCarousel from 'scroll-carousel-react';
 
 export const ProyectCarousel = ({data, dir}) => {
@@ -13,8 +12,8 @@ export const ProyectCarousel = ({data, dir}) => {
         speed={7}
         onReady={() => console.log('I am ready')}
       >
-        {data.map((item)=> (
-          <div className='mt-10 flex flex-col'>
+        {data.map((item, index) => (
+          <div key={index} className='mt-10 flex flex-col'>
             <img src={item.img} className='w-max h-52 rounded-md' alt='carousel-img'/>
             <h3 className='text-center font-semibold mt-5'>{item.text}</h3>
           </div>

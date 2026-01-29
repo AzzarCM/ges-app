@@ -1,5 +1,3 @@
-import React from 'react'
-
 import '../pages/css/custom_home.css'
 
 export const HomeWelcome = ({backgroundPage}) => {

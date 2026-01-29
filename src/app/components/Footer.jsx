@@ -1,4 +1,3 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
@@ -23,8 +22,8 @@ export const Footer = () => {
             </NavLink>))}
         </div>
         <div className='flex justify-center mt-5'>
-          <a href='https://wa.me/50376765329' target='_blank'><FontAwesomeIcon size='2xl' color='white' icon={faWhatsapp} /></a>
-          <a href='https://www.linkedin.com/company/global-electric-services-s-a-de-c-v/' target='_blank'>
+          <a href='https://wa.me/50376765329' target='_blank' rel='noreferrer'><FontAwesomeIcon size='2xl' color='white' icon={faWhatsapp} /></a>
+          <a href='https://www.linkedin.com/company/global-electric-services-s-a-de-c-v/' target='_blank' rel='noreferrer'>
             <FontAwesomeIcon className='pl-5' size='2xl' color='white' icon={faLinkedinIn} />
           </a>
           <FontAwesomeIcon className='pl-5' size='2xl' color='white' icon={faInstagram} />
