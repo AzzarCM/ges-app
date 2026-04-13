@@ -1,6 +1,9 @@
-import React from 'react'
 import './css/custom_home.css'
 import { Footer } from '../components/Footer'
+import ingenieria1 from '../assets/img/ing1.jpg'
+import ingenieria2 from '../assets/img/ing2.jpeg'
+import ingenieria3 from '../assets/img/ing3.png'
+import ingenieria4 from '../assets/img/ing4.jpeg'
 
 const ingenieria = [
   { name: 'Ingeniería', description: 'Aplicación de los conocimientos a la solución de los problemas y retos que enfrentan en las diferentes áreas.' },
@@ -12,27 +15,27 @@ const ingenieria = [
 const suministros = [
   { name: 'Generadores', description: 'Dispositivos o máquinas capaces de producir energía de manera propia.' },
   { name: 'Controladores', description: 'Herramientas de monitoreo y control en línea para dispositivos y accesorios' },
-  { name: 'Iluminación', description: 'descripcion' },
-  { name: 'Suministro 4', description: 'descripcion' },
+  { name: 'Iluminación', description: 'Luminarias, accesorios y soluciones de alumbrado para espacios industriales, comerciales y exteriores, con eficiencia energética y normativa vigente.' },
+  { name: 'Material eléctrico', description: 'Tableros, protecciones, conductores y material eléctrico certificado para completar su instalación con calidad y trazabilidad.' },
 ]
 
 const mantenimiento = [
-  { name: 'Mantenimiento Preventivo', description: 'descripcion' },
-  { name: 'Mantenimiento Predictivo', description: 'descripcions' },
-  { name: 'Mantenimiento Correctivo', description: 'descripcion' }
+  { name: 'Mantenimiento Preventivo', description: 'Revisiones y actividades programadas para reducir fallas, alargar la vida útil del equipo y mantener condiciones seguras de operación.' },
+  { name: 'Mantenimiento Predictivo', description: 'Monitoreo de tendencias y mediciones (térmicas, eléctricas, vibración) para anticipar averías y planar intervenciones sin paradas innecesarias.' },
+  { name: 'Mantenimiento Correctivo', description: 'Diagnóstico y reparación de fallas ya presentes, con restablecimiento de la operación y medidas para evitar recurrencia.' },
 ]
 
 const mediciones = [
-  { name: 'Analizar comportamientos de red', description: '' },
-  { name: 'Mediciones de transformadores', description: '' },
-  { name: 'Termografías', description: '' },
-  { name: 'Aislamiento de conductores', description: '' },
-  { name: 'Mediciones de red de polarización', description: '' },
-  { name: 'Medición de banco de baterías', description: '' },
-  { name: 'Resistencia de contactos', description: '' },
-  { name: 'Mediciones de temperatura y humedad', description: '' },
-  { name: 'Medición de Aislamiento', description: '' },
-  { name: 'Calidad y utilización eficiente de la energía', description: '' },
+  { name: 'Analizar comportamientos de red', description: 'Registro y evaluación de parámetros de la red eléctrica para detectar desbalances, armónicos o condiciones anómalas.' },
+  { name: 'Mediciones de transformadores', description: 'Ensayos eléctricos y de aislamiento en transformadores para verificar estado, relación de transformación y pérdidas.' },
+  { name: 'Termografías', description: 'Inspección infrarroja de equipos y conexiones para localizar puntos calientes y riesgos térmicos sin contacto.' },
+  { name: 'Aislamiento de conductores', description: 'Medición de resistencia de aislamiento en cables y bobinados para validar integridad dieléctrica.' },
+  { name: 'Mediciones de red de polarización', description: 'Verificación de la red de tierra y polarización para cumplir criterios de seguridad y continuidad de conductores de protección.' },
+  { name: 'Medición de banco de baterías', description: 'Pruebas de voltaje, resistencia interna o descarga controlada para asegurar respaldo de energía en sistemas críticos.' },
+  { name: 'Resistencia de contactos', description: 'Medición de la resistencia en contactos de interruptores, seccionadores y empalmes para detectar degradación o sobrecalentamiento.' },
+  { name: 'Mediciones de temperatura y humedad', description: 'Registro ambiental en salas eléctricas, baterías o equipos sensibles para correlacionar condiciones con el desempeño.' },
+  { name: 'Medición de Aislamiento', description: 'Ensayo con megóhmetro u otro equipo homologado para cuantificar la resistencia de aislamiento de instalaciones y equipos.' },
+  { name: 'Calidad y utilización eficiente de la energía', description: 'Estudios de factor de potencia, armónicos y perfiles de carga para mejorar la eficiencia y el cumplimiento normativo.' },
 ]
 
 export const Services = () => {
@@ -48,7 +51,7 @@ export const Services = () => {
         </div>
       </div>
       <div className="bg-white">
-        <section datatype='section' id='ingenieria' className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+        <section id='ingenieria' className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
           <div>
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl"><span className='text-global-main-color'>Ingeniería </span>y Diseño</h2>
             <p className="mt-4 text-gray-500">
@@ -70,24 +73,24 @@ export const Services = () => {
           </div>
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
-              alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-              className="rounded-lg bg-gray-100"
+              src={ingenieria1}
+              alt="Ingenieria y Diseño"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+              src={ingenieria2}
               alt="Top down view of walnut card tray with embedded magnets and card groove."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+              src={ingenieria3}
               alt="Side of walnut card tray with card groove and recessed card area."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+              src={ingenieria4}
               alt="Walnut card tray filled with cards and card angled in dedicated groove."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
           </div>
         </section>
@@ -216,11 +219,11 @@ export const Services = () => {
             </dl>
           </div>
         </section>
-        <section datatype='section' id='construccion' className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+        <section id='construccion' className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
           <div>
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">Construcción</h2>
             <p className="mt-4 text-gray-500">
-              Ofrecemos soluciones flexibles e integrales bajo una amplia modalidad de formas, incluyendo "Llave en Mano", 
+              Ofrecemos soluciones flexibles e integrales bajo una amplia modalidad de formas, incluyendo &quot;Llave en Mano&quot;, 
               precios unitarios y otros, de acuerdo a la preferencia del cliente. Experiencia que se comparte con nuestros 
               clientes a través de la ingeniería de valor. Siendo nuestra fortaleza el área electromecánica, 
               cuando el proyecto lo demanda incorporamos a nuestro equipo, empresas y/o profesionales especialistas de reconocido 
