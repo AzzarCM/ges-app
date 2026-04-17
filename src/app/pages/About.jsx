@@ -1,4 +1,3 @@
-import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faLock, faHand } from '@fortawesome/free-solid-svg-icons'
 import { TeamSection } from '../components/TeamSection'
@@ -150,9 +149,10 @@ export const About = () => {
                   </li>
                 </ul>
                 <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-                  fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-                  adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
+                  En Global Electric Services trabajamos cada día para fortalecer la confianza de nuestros clientes con
+                  resultados medibles, cumplimiento de plazos y un acompañamiento cercano en cada fase del proyecto.
+                  Si desea conocer cómo podemos apoyar su operación, nuestro equipo está listo para escuchar sus
+                  necesidades y proponer la solución adecuada.
                 </p>
               </div>
             </div>

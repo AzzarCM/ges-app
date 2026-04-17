@@ -12,8 +12,8 @@ export const TestimonialCard = () => {
         <figure className="mt-10">
           <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
             <p>
-              “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
-              molestiae. Numquam corrupti in laborum sed rerum et corporis.”
+              “Para nosotros el cliente va primero: escuchamos sus necesidades y acompañamos cada etapa con claridad y
+              compromiso. Ejecutamos los proyectos con rigor y procesos alineados a estándares de clase mundial.”
             </p>
           </blockquote>
           <figcaption className="mt-10">

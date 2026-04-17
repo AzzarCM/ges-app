@@ -17,4 +17,19 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  overrides: [
+    {
+      files: ['src/components/ui/**/*.{js,jsx}'],
+      rules: {
+        'react/prop-types': 'off',
+        'react-refresh/only-export-components': 'off',
+      },
+    },
+    {
+      files: ['src/app/pages/**/*.{js,jsx}'],
+      rules: {
+        'react/prop-types': 'off',
+      },
+    },
+  ],
 }
