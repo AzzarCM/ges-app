@@ -35,7 +35,7 @@ import hospital1 from '../assets/img/hospital1.png'
 import hospital2 from '../assets/img/hospital2.png'
 import hospital3 from '../assets/img/hospital3.png'
 import hospital4 from '../assets/img/hospital4.png'
-
+import proyectsHeroBanner from '../assets/img/banner-2.jpg'
 
 const projects = [
   {
@@ -234,21 +234,26 @@ function ProjectSection({ title, paragraphs, images, reverse }) {
 export const Proyects = () => {
   return (
     <div className="bg-background text-foreground">
-      <header className="relative isolate overflow-hidden border-b border-border/40">
-        <img
-          src="https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-          className="absolute inset-0 -z-10 h-full w-full object-cover object-center opacity-40"
+      <header className="relative min-h-[20rem] overflow-hidden border-b border-border/40 sm:min-h-[24rem]">
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <img
+            src={proyectsHeroBanner}
+            alt=""
+            className="h-full w-full object-cover object-center"
+          />
+        </div>
+        <div
+          className="pointer-events-none absolute inset-0 z-[5] bg-gradient-to-b from-black/50 via-black/55 to-black/65"
+          aria-hidden="true"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/80 via-background/90 to-background" />
-        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
+        <div className="relative z-10 mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] !text-global-main-color drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">
             Portafolio
           </p>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight !text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)] sm:text-4xl lg:text-5xl">
             Casos de éxito
           </h1>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed !text-gray-100 drop-shadow-[0_1px_8px_rgba(0,0,0,0.9)] sm:text-lg">
             Estándares en servicios eléctricos comerciales e industriales con
             soluciones profesionales y confiables.
           </p>
