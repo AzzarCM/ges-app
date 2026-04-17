@@ -4,6 +4,20 @@ import ingenieria1 from '../assets/img/ing1.jpg'
 import ingenieria2 from '../assets/img/ing2.jpeg'
 import ingenieria3 from '../assets/img/ing3.png'
 import ingenieria4 from '../assets/img/ing4.jpeg'
+import suministroGeneradores from '../assets/img/planta_1.jpg'
+import suministroControladores from '../assets/img/websupervisor.png'
+import suministroIluminacion from '../assets/img/poste_1.jpg'
+import suministroMaterial from '../assets/img/tablero_1.jpg'
+import mantenimiento1 from '../assets/img/mantenimiento1.jpeg'
+import mantenimiento2 from '../assets/img/mantenimiento2.jpeg'
+import mantenimiento3 from '../assets/img/mantenimiento3.jpeg'
+import mediciones1 from '../assets/img/medidor_1.jpg'
+import mediciones2 from '../assets/img/flir_1.jpg'
+import mediciones3 from '../assets/img/medicion3.png'
+import constru1 from '../assets/img/constru1.jpeg'
+import constru2 from '../assets/img/constru2.jpeg'
+import constru3 from '../assets/img/constru3.jpeg'
+import constru4 from '../assets/img/constru4.png'
 
 const ingenieria = [
   { name: 'Ingeniería', description: 'Aplicación de los conocimientos a la solución de los problemas y retos que enfrentan en las diferentes áreas.' },
@@ -38,10 +52,17 @@ const mediciones = [
   { name: 'Calidad y utilización eficiente de la energía', description: 'Estudios de factor de potencia, armónicos y perfiles de carga para mejorar la eficiencia y el cumplimiento normativo.' },
 ]
 
+const construccion = [
+  { name: 'Llave en mano y otras modalidades', description: 'Ejecución integral o por partidas según el proyecto: contratos llave en mano, precios unitarios y esquemas a la medida del cliente.' },
+  { name: 'Ingeniería de valor', description: 'Propuestas constructivas y optimización de soluciones para alinear alcance técnico, presupuesto y plazos sin sacrificar seguridad ni normativa.' },
+  { name: 'Fortaleza electromecánica', description: 'Enfoque principal en obras y montajes eléctricos y mecánicos asociados, con criterios de diseño, instalación y puesta en servicio coordinados.' },
+  { name: 'Red de especialistas aliados', description: 'Cuando el alcance lo exige, integramos empresas y profesionales de otras disciplinas con trayectoria comprobada para cubrir el proyecto de forma conjunta.' },
+]
+
 export const Services = () => {
   return (
     <div>
-      <div className='backgroundServices bg-cover w-full full-screen-banner-height flex items-center justify-center'>
+      <div className='backgroundServices w-full full-screen-banner-height flex items-center justify-center'>
         <div className='flex flex-col items-center rounded-md bg-gradient-to-r from-custom-black-gray from-25% xl:p-20'>
           <h1 className='text-white text-6xl xl:text-8xl font-bold text-center mb-10'>Nuestros <span className='text-global-main-color'>Servicios</span></h1>
           <p className='text-white text-3xl max-w-2xl mb-10 font-thin text-center'>Creando asociaciones a
@@ -97,24 +118,24 @@ export const Services = () => {
         <section id='suministros' className="flex flex-wrap-reverse mx-auto lg:grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8 ">
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
-              alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-              className="rounded-lg bg-gray-100"
+              src={suministroGeneradores}
+              alt="Instalación y equipos asociados a generación y respaldo de energía"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
-              alt="Top down view of walnut card tray with embedded magnets and card groove."
-              className="rounded-lg bg-gray-100"
+              src={suministroControladores}
+              alt="Sistemas de monitoreo y control para equipos eléctricos"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
-              alt="Side of walnut card tray with card groove and recessed card area."
-              className="rounded-lg bg-gray-100"
+              src={suministroIluminacion}
+              alt="Infraestructura eléctrica e iluminación en instalaciones"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
-              alt="Walnut card tray filled with cards and card angled in dedicated groove."
-              className="rounded-lg bg-gray-100"
+              src={suministroMaterial}
+              alt="Tableros y material eléctrico para instalaciones"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
           </div>
           <div>
@@ -157,48 +178,48 @@ export const Services = () => {
           </div>
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
+              src="https://cuervaenergia.com/static/ed402570faa685476e42b6ae0b7a6c87/c0a1e/mantenimiento-electrico-industrial.webp"
               alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+              src={mantenimiento1}
               alt="Top down view of walnut card tray with embedded magnets and card groove."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+              src={mantenimiento2}
               alt="Side of walnut card tray with card groove and recessed card area."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+              src={mantenimiento3}
               alt="Walnut card tray filled with cards and card angled in dedicated groove."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
           </div>
         </section>
         <section id='mediciones' className="flex flex-wrap-reverse mx-auto lg:grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8 ">
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
+              src={mediciones1}
               alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+              src={mediciones2}
               alt="Top down view of walnut card tray with embedded magnets and card groove."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+              src={mediciones3}
               alt="Side of walnut card tray with card groove and recessed card area."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+              src="https://www.comercializadorainvertek.cl/wp-content/uploads/2024/07/Medicion-de-Aislacion-1.jpeg"
               alt="Walnut card tray filled with cards and card angled in dedicated groove."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
           </div>
           <div>
@@ -229,35 +250,35 @@ export const Services = () => {
               cuando el proyecto lo demanda incorporamos a nuestro equipo, empresas y/o profesionales especialistas de reconocido 
               prestigio y honestidad y responsabilidad por la seguridad, calidad, costos y tiempo de entrega.
             </p>
-            {/* <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-              {ingenieria.map((feature) => (
+            <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+              {construccion.map((feature) => (
                 <div key={feature.name} className="border-t border-gray-200 pt-4">
                   <dt className="font-medium text-gray-900">{feature.name}</dt>
                   <dd className="mt-2 text-sm text-gray-500">{feature.description}</dd>
                 </div>
               ))}
-            </dl> */}
+            </dl>
           </div>
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
+              src={constru1}
               alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+              src={constru2}
               alt="Top down view of walnut card tray with embedded magnets and card groove."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+              src={constru3}
               alt="Side of walnut card tray with card groove and recessed card area."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
             <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+              src={constru4}
               alt="Walnut card tray filled with cards and card angled in dedicated groove."
-              className="rounded-lg bg-gray-100"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
           </div>
         </section>

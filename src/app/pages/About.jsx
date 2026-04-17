@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faLock, faHand } from '@fortawesome/free-solid-svg-icons'
 import { TeamSection } from '../components/TeamSection'
+import { MissionVision } from '../components/MissionVision'
 import banner3 from '../assets/img/banner-3.png'
 import { Footer } from '../components/Footer'
 import { NavLink } from 'react-router-dom'
@@ -147,9 +148,16 @@ export const About = () => {
                       de que cualquier reparación o instalación se complete con prontitud.
                     </span>
                   </li>
+                  <li className="flex gap-x-3">
+                    <FontAwesomeIcon className="mt-1 h-5 w-5 flex-none text-global-main-color" aria-hidden="true" icon={faHand} />
+                    <span>
+                      <strong className="font-semibold text-gray-900">Seguridad</strong>  Rigor técnico para proteger la integridad de las personas y los activos en cada intervención.
+
+                    </span>
+                  </li>
                 </ul>
                 <p className="mt-8">
-                  En Global Electric Services trabajamos cada día para fortalecer la confianza de nuestros clientes con
+                  En <span className='font-semibold text-global-main-color'>GES</span> trabajamos cada día para fortalecer la confianza de nuestros clientes con
                   resultados medibles, cumplimiento de plazos y un acompañamiento cercano en cada fase del proyecto.
                   Si desea conocer cómo podemos apoyar su operación, nuestro equipo está listo para escuchar sus
                   necesidades y proponer la solución adecuada.
@@ -159,6 +167,7 @@ export const About = () => {
           </div>
         </div>
       </div>
+      <MissionVision />
       <TeamSection/>
       <Footer/>
     </div>

@@ -1,5 +1,6 @@
 import './css/custom_home.css'
 import { TestimonialCard } from '../components/TestimonialCard'
+import { Partners } from '../components/Partners'
 import { Footer } from '../components/Footer'
 import {
   Carousel,
@@ -11,14 +12,104 @@ import {
 import { cn } from '@/lib/utils'
 
 import comap1 from '../assets/img/websupervisor.png'
+import comap2 from '../assets/img/comap1.jpeg'
 import linea1 from '../assets/img/linea1.png'
 import capacitor1 from '../assets/img/capacitor.png'
 import capacitor2 from '../assets/img/capacitor2.png'
 import alimentadores1 from '../assets/img/alimentadores1.png'
+import lido1 from '../assets/img/lido1.png'
+import lido2 from '../assets/img/lido2.png'
+import hilasal1 from '../assets/img/hilasal1.png'
+import hilasal2 from '../assets/img/hilasal2.png'
+import hilasal3 from '../assets/img/hilasal3.png'
+import hilasal4 from '../assets/img/hilasal4.png'
+import asamblea1 from '../assets/img/asamblea1.png'
+import asamblea2 from '../assets/img/asamblea2.png'
+import asamblea3 from '../assets/img/asamblea3.png'
+import asamblea4 from '../assets/img/asamblea4.png'
+import cabana1 from '../assets/img/cabana1.png'
+import cabana2 from '../assets/img/cabana2.png'
+import cabana3 from '../assets/img/cabana3.png'
+import cabana4 from '../assets/img/cabana4.png'
+import hospital1 from '../assets/img/hospital1.png'
+import hospital2 from '../assets/img/hospital2.png'
+import hospital3 from '../assets/img/hospital3.png'
+import hospital4 from '../assets/img/hospital4.png'
+
 
 const projects = [
   {
     id: 'hospital',
+    title: 'Remodelacion de subestacion electrica e instalación de un generador de emergencia.',
+    paragraphs: [
+      'Remodelación de subestación eléctrica e instalación de un generador de emergencia.',
+      'Se realizo la remodelacion de la subestacion electrica y la instalacion de un generador de emergencia en el Hospital General de El Salvador',
+    ],
+    images: [
+      { src: hospital1, alt: 'Diseño eléctrico' },
+      { src: hospital2, alt: 'Diseño eléctrico' },
+      { src: hospital3, alt: 'Diseño eléctrico' },
+      { src: hospital4, alt: 'Diseño eléctrico' },
+    ],
+  },
+  {
+    id: 'cabana',
+    title: 'Mantenimiento a subestacion y línea primaria',
+    paragraphs: [
+      'Mantenimiento a subestacion y línea primaria en Ingenio La Cabaña',
+      'Se realizó el mantenimiento a la subestación y línea primaria',
+    ],
+    images: [
+      { src: cabana1, alt: 'Diseño eléctrico' },
+      { src: cabana2, alt: 'Diseño eléctrico' },
+      { src: cabana3, alt: 'Diseño eléctrico' },
+      { src: cabana4, alt: 'Diseño eléctrico' },
+    ]
+
+  },
+
+  {
+    id: 'asamblea',
+    title: 'Instalación de transferencia automatica para planta de emergecencia',
+    paragraphs: [
+      'Instalación de transferencia automatica para planta de emergecencia en la Asamblea Legislativa',
+    ],
+    images: [
+      { src: asamblea1, alt: 'Diseño eléctrico' },
+      { src: asamblea2, alt: 'Diseño eléctrico' },
+      { src: asamblea3, alt: 'Diseño eléctrico' },
+      { src: asamblea4, alt: 'Diseño eléctrico' },
+    ]
+  },
+
+  {
+    id: 'hilasal',
+    title: 'Remplazo e instalación de acometida de media tension 35kv',
+    paragraphs: [
+      'Remplazo e instalación de acometida de media tension 35kv en Hilasal',
+      'Instalacion de transferencias y cableado electrico mas de 300 metros'
+    ],
+    images: [
+      { src: hilasal1, alt: 'Diseño eléctrico' },
+      { src: hilasal2, alt: 'Diseño eléctrico' },
+      { src: hilasal3, alt: 'Diseño eléctrico' },
+      { src: hilasal4, alt: 'Diseño eléctrico' },
+    ],
+  },
+  {
+    id: 'lido',
+    title: 'Instalacion de planta de generacion y respaldo de energia',
+    paragraphs: [
+      'Instalación de planta de generación y respaldo de energía en el Alimvasa (Lido)',
+      'Se entregaron memorias de cálculo, cuadros de carga, diagramas unifilares y detalles constructivos. Se instalaron generadores de 1000 kVA',
+    ],
+    images: [
+      { src: lido1, alt: 'Diseño eléctrico' },
+      { src: lido2, alt: 'Diseño eléctrico' },
+    ],
+  },
+  {
+    id: 'hospital1',
     title: 'Monitoreo de sistemas eléctricos — hospital principal de El Salvador',
     paragraphs: [
       'Uno de los proyectos más emblemáticos de nuestra compañía ha sido la automatización de los sistemas primarios y de respaldo de uno de los hospitales más importantes de El Salvador: suministro, instalación y puesta en marcha del monitoreo de las instalaciones eléctricas.',
@@ -26,7 +117,7 @@ const projects = [
     ],
     images: [
       { src: comap1, alt: 'Interfaz ComAp' },
-      { src: comap1, alt: 'Interfaz ComAp' },
+      { src: comap2, alt: 'Interfaz ComAp' },
       { src: comap1, alt: 'Interfaz ComAp' },
       { src: comap1, alt: 'Interfaz ComAp' },
     ],
@@ -72,7 +163,7 @@ const projects = [
       { src: alimentadores1, alt: 'Diseño eléctrico' },
       { src: alimentadores1, alt: 'Diseño eléctrico' },
     ],
-  },
+  }
 ]
 
 function ProjectCarousel({ images, className }) {
@@ -84,7 +175,7 @@ function ProjectCarousel({ images, className }) {
       <CarouselContent className="-ml-0">
         {images.map(({ src, alt }, i) => (
           <CarouselItem key={`${alt}-${i}`} className="pl-0 basis-full">
-            <div className="overflow-hidden rounded-xl border border-border/60 bg-muted/30 aspect-[4/3]">
+            <div className="overflow-hidden rounded-xl border border-border/60 bg-muted/30 aspect-[4/5] sm:aspect-[3/4]">
               <img
                 src={src}
                 alt={alt}
@@ -163,8 +254,9 @@ export const Proyects = () => {
           </p>
         </div>
       </header>
-
+      <Partners />
       <TestimonialCard />
+     
 
       <div className="mx-auto max-w-6xl px-4 pt-4 sm:px-6 lg:px-8">
         <p className="border-b border-border/40 pb-6 text-sm text-muted-foreground">
@@ -181,6 +273,8 @@ export const Proyects = () => {
           reverse={index % 2 === 1}
         />
       ))}
+
+      <Partners />
 
       <Footer />
     </div>

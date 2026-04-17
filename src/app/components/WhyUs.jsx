@@ -1,31 +1,24 @@
-
 import {
   ClockIcon,
   BanknotesIcon,
   CheckCircleIcon,
   HandThumbUpIcon
 } from '@heroicons/react/24/outline'
+import banner2 from '../assets/img/banner-2.jpg'
 
-const links = [
-  { name: 'Puestos', href: '#' },
-  { name: 'Proyectos', href: '#' },
-  { name: 'Nuestros valores', href: '#' },
-  { name: 'Nuestro equipo', href: '#' },
-]
 const stats = [
   { name: 'Precios accesibles', value: '12', icon: BanknotesIcon },
   { name: 'Tecnicos calificados y certificados', value: '300+', icon: CheckCircleIcon },
   { name: 'Tiempo de proyectos garantizados', value: '40', icon: ClockIcon },
   { name: 'Cotizaciones gratuitas y detalladas', value: 'Unlimited', icon: HandThumbUpIcon },
 ]
-const unplashPhoto = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply'
 
 export const WhyUs = () => {
 
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
       <img
-        src={unplashPhoto}
+        src={banner2}
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
       />
@@ -53,6 +46,10 @@ export const WhyUs = () => {
           }}
         />
       </div>
+      <div
+        className="absolute inset-0 -z-10 bg-black/80"
+        aria-hidden="true"
+      />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Trabaja con nosotros</h2>
@@ -67,13 +64,6 @@ export const WhyUs = () => {
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-            {links.map((link) => (
-              <a key={link.name} href={link.href}>
-                {link.name} <span aria-hidden="true">&rarr;</span>
-              </a>
-            ))}
-          </div>
           <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.value} className="flex flex-col-reverse">

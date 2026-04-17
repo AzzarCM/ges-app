@@ -5,6 +5,15 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'partners-marquee': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        'partners-marquee': 'partners-marquee 45s linear infinite',
+      },
       colors: {
         'custom-black': '#030304',
         'custom-black-200': '#161515',
