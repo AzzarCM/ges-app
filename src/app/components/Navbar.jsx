@@ -6,6 +6,7 @@ import {
   Bars3Icon,
   CursorArrowRaysIcon,
   SquaresPlusIcon,
+  SunIcon,
   XMarkIcon,
   ClockIcon
 } from '@heroicons/react/24/outline'
@@ -18,6 +19,7 @@ const products = [
   { name: 'Operación y Mantenimiento', description: 'Servicios de Mantenimiento para todas sus áreas de negocios. ', href: '/services/#mantenimiento', icon: SquaresPlusIcon },
   { name: 'Mediciones', description: 'Realizamos mediciones de variables eléctricas con equipo certificado de primera categoría', href: '/services/#mediciones', icon: SquaresPlusIcon },
   { name: 'Construcción', description: 'Ofrecemos soluciones flexibles', href: '/services/#construccion', icon: ArrowPathIcon },
+  { name: 'Energías renovables', description: 'Diseño, integración y soporte para sistemas solares y otras fuentes limpias', href: '/services/#energias-renovables', icon: SunIcon },
 ]
 const callsToAction = [
   { name: 'Cotizacion', href: '/contact', icon: PlayCircleIcon },

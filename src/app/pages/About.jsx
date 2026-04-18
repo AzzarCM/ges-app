@@ -5,26 +5,26 @@ import { MissionVision } from '../components/MissionVision'
 import banner3 from '../assets/img/banner-3.png'
 import { Footer } from '../components/Footer'
 import { NavLink } from 'react-router-dom'
+import navidad1 from '../assets/img/eventos/navidad1.jpeg'
 
 export const About = () => {
   return (
     <div>
-      <div className="relative px-6 pt-14 lg:px-8">
-        <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#fcc26c] to-[#fcc26c] opacity-60 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
+      <div className="relative isolate min-h-[28rem] overflow-hidden px-6 pt-14 sm:min-h-[32rem] lg:px-8">
+        <div className="absolute inset-0 -z-20">
+          <img
+            src={navidad1}
+            alt=""
+            className="h-full w-full object-cover object-center"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div
+          className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-black/55 via-black/45 to-black/60"
+          aria-hidden="true"
+        />
+        <div className="relative z-10 mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-100 ring-1 ring-white/25 backdrop-blur-sm hover:ring-white/40">
               Conoce a nuestro equipo{' '}
               <a href="/about/#team" className="font-semibold text-global-main-color">
                 <span className="absolute inset-0" aria-hidden="true" />
@@ -33,10 +33,10 @@ export const About = () => {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)] sm:text-6xl">
               ¿Quienes Somos?
             </h1>
-            <p className="mt-6 text-lg font-thin leading-8 text-gray-600">
+            <p className="mt-6 text-lg font-thin leading-8 text-gray-100 drop-shadow-[0_1px_8px_rgba(0,0,0,0.75)]">
               Conoce mas sobre nuestra historia y el equipo de profesionales que conforman la empresa.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -46,23 +46,11 @@ export const About = () => {
               >
                 Contacto
               </NavLink>
-              <NavLink to="/proyects" className="text-sm font-semibold leading-6 text-gray-900">
+              <NavLink to="/proyects" className="text-sm font-semibold leading-6 text-white drop-shadow-[0_1px_6px_rgba(0,0,0,0.8)] hover:text-global-main-color">
                 Proyectos <span aria-hidden="true">→</span>
               </NavLink>
             </div>
           </div>
-        </div>
-        <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#fcc26c] to-[#fcc26c] opacity-60 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-          />
         </div>
       </div>
       <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">

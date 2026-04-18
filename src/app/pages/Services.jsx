@@ -18,6 +18,11 @@ import constru1 from '../assets/img/constru1.jpeg'
 import constru2 from '../assets/img/constru2.jpeg'
 import constru3 from '../assets/img/constru3.jpeg'
 import constru4 from '../assets/img/constru4.png'
+import servicesHeroBanner from '../assets/img/cover-servicios1.jpg'
+import renovables1 from '../assets/img/renovables1.webp'
+import renovables2 from '../assets/img/renovables2.jpg'
+import renovables3 from '../assets/img/renovables3.jpg'
+import renovables4 from '../assets/img/renovables4.jpg'
 
 const ingenieria = [
   { name: 'Ingeniería', description: 'Aplicación de los conocimientos a la solución de los problemas y retos que enfrentan en las diferentes áreas.' },
@@ -59,18 +64,44 @@ const construccion = [
   { name: 'Red de especialistas aliados', description: 'Cuando el alcance lo exige, integramos empresas y profesionales de otras disciplinas con trayectoria comprobada para cubrir el proyecto de forma conjunta.' },
 ]
 
+const energiasRenovables = [
+  { name: 'Generación distribuida', description: 'Estudios, dimensionamiento e interconexión de sistemas fotovoltaicos y respaldo para instalaciones comerciales e industriales.' },
+  { name: 'Integración a la red', description: 'Coordinación con la distribuidora, protecciones, medición y cumplimiento normativo para operación segura en paralelo con la red.' },
+  { name: 'Operación y seguimiento', description: 'Apoyo en mantenimiento, monitoreo de desempeño y optimización del recurso energético a lo largo de la vida del proyecto.' },
+  { name: 'Sistemas de monitorización', description: 'Diseño, integración y soporte para sistemas de monitorización de energía. Control detallado del rendimiento y eficiencia del sistema.' },
+  { name: 'Inversores de alta potencia', description: 'Transformacion eficiente para consumos elevados de energia.'},
+  { name: 'Sistemas de almacenamiento de energia', description: 'Baterias para independecia energetica y respaldo de sistemas fotovoltaicos.'}
+  ]
+
 export const Services = () => {
   return (
-    <div>
-      <div className='backgroundServices w-full full-screen-banner-height flex items-center justify-center'>
-        <div className='flex flex-col items-center rounded-md bg-gradient-to-r from-custom-black-gray from-25% xl:p-20'>
-          <h1 className='text-white text-6xl xl:text-8xl font-bold text-center mb-10'>Nuestros <span className='text-global-main-color'>Servicios</span></h1>
-          <p className='text-white text-3xl max-w-2xl mb-10 font-thin text-center'>Creando asociaciones a
-            largo plazo con nuestros servicios <span className='text-global-main-color font-bold'>eléctricos</span> de alta
-            calidad para necesidades residenciales y comerciales.</p>
-          {/* <p className='text-white text-2xl max-w-3xl p-2 text-center'>Profesionales experimentados ofreciendo instalaciones eléctricas, reparaciones, y servicios de mantenimiento en propiedades comerciales y privadas.</p> */}
+    <div className="bg-background text-foreground">
+      <header className="relative min-h-[20rem] overflow-hidden border-b border-border/40 sm:min-h-[24rem]">
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <img
+            src={servicesHeroBanner}
+            alt=""
+            className="h-full w-full object-cover object-center"
+          />
         </div>
-      </div>
+        <div
+          className="pointer-events-none absolute inset-0 z-[5] bg-gradient-to-b from-black/50 via-black/55 to-black/65"
+          aria-hidden="true"
+        />
+        <div className="relative z-10 mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] !text-global-main-color drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">
+            Servicios
+          </p>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight !text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)] sm:text-4xl lg:text-5xl">
+            Nuestros <span className="text-global-main-color">Servicios</span>
+          </h1>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed !text-gray-100 drop-shadow-[0_1px_8px_rgba(0,0,0,0.9)] sm:text-lg">
+            Creando asociaciones a largo plazo con nuestros servicios{' '}
+            <span className="font-semibold text-global-main-color">eléctricos</span> de alta calidad para
+            necesidades residenciales y comerciales.
+          </p>
+        </div>
+      </header>
       <div className="bg-white">
         <section id='ingenieria' className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
           <div>
@@ -197,6 +228,45 @@ export const Services = () => {
               alt="Walnut card tray filled with cards and card angled in dedicated groove."
               className="rounded-lg bg-gray-100 w-full h-full object-cover"
             />
+          </div>
+        </section>
+        <section id='energias-renovables' className="flex flex-wrap-reverse mx-auto lg:grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8 ">
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+            <img
+              src={renovables1}
+              alt="Infraestructura de generación y energía"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
+            />
+            <img
+              src={renovables2}
+              alt="Ingeniería y sistemas eléctricos"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
+            />
+            <img
+              src={renovables3}
+              alt="Alumbrado e instalaciones exteriores"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
+            />
+            <img
+              src={renovables4}
+              alt="Tableros y distribución eléctrica"
+              className="rounded-lg bg-gray-100 w-full h-full object-cover"
+            />
+          </div>
+          <div>
+            <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl"><span className='text-global-main-color'>Energías </span>renovables</h2>
+            <p className="mt-4 text-gray-500">
+              Acompañamos proyectos de energía limpia desde la conceptualización hasta la puesta en servicio,
+              alineando criterios técnicos, económicos y regulatorios para una transición energética confiable.
+            </p>
+            <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+              {energiasRenovables.map((feature) => (
+                <div key={feature.name} className="border-t border-gray-200 pt-4">
+                  <dt className="font-medium text-gray-900">{feature.name}</dt>
+                  <dd className="mt-2 text-sm text-gray-500">{feature.description}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </section>
         <section id='mediciones' className="flex flex-wrap-reverse mx-auto lg:grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8 ">
